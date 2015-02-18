@@ -130,3 +130,6 @@
 [submodule "vim/bundle/vim-jsx"]
 	path = vim/bundle/vim-jsx
 	url = git://github.com/mxw/vim-jsx.git
+[submodule "vim/bundle/javascript-libraries-syntax.vim"]
+	path = vim/bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
