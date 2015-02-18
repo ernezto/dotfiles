@@ -9,6 +9,7 @@ execute pathogen#infect()
 
 " Personal preferences
 let mapleader = " "
+let g:NERDTreeWinSize = 60
 set modeline
 set number
 set expandtab
