@@ -3,6 +3,7 @@ set RBENV_BIN_ROOT "$HOME/.rbenv/bin"
 set fish_path $HOME/.oh-my-fish
 
 # Theme
+set -U budspencer_pwdstyle long short none
 set fish_theme budspencer
 
 # All built-in plugins can be found at ~/.oh-my-fish/plugins/
