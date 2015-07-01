@@ -149,3 +149,13 @@ autocmd BufRead,BufNewFile *.jsx let b:syntastic_checkers = ['jsxhint']
 
 " javascript-libraries-syntax.vim config
 let g:used_javascript_libs = 'underscore,jquery,angularjs,angularui,requirejs'
+
+" Handle multiple buffers better.
+set hidden
+
+" Tab between buffers
+noremap <tab> <c-w><c-w>
+
+" Navigate between buffers
+nmap <C-k> :bnext<CR>
+nmap <C-j> :bprev<CR>
