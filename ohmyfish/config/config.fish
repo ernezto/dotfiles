@@ -16,3 +16,4 @@ set fish_plugins archlinux peco theme rbenv balias node
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+bind \cl 'clear; commandline -f repaint'
