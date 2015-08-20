@@ -159,3 +159,9 @@ noremap <tab> <c-w><c-w>
 " Navigate between buffers
 nmap <C-k> :bnext<CR>
 nmap <C-j> :bprev<CR>
+
+" Quit with :Q
+command -nargs=0 Quit :qa!
+
+" Ctrl-P -> ;
+nnoremap <silent> ; :CtrlP<cr>
