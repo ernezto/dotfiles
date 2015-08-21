@@ -1,3 +1,6 @@
+" Set shell to bash"
+set shell=/bin/bash
+
 " Disable plugins accordingly
 let g:pathogen_disabled = []
 if v:version < 703
