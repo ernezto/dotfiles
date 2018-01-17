@@ -118,7 +118,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 set noshowmode
 
 " Vim-gitgutter config
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 
 " Emmet config
 let g:user_emmet_settings = {
