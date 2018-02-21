@@ -1,5 +1,3 @@
-import plugins/balias
-
 balias gst            "git status"
 balias gp             "git push"
 balias gd             "git diff"
