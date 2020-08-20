@@ -1,16 +1,9 @@
 [user]
   name = Ernesto Medina
   email = ernezto@gmail.com
-[credential]
-  helper = osxkeychain
-[alias]
-  st = status
-  co = checkout
-  cm = commit -m
-  pr = pull --rebase
 [color]
   ui = true
 [core]
   editor = vim
 [push]
-	default = simple
+  default = simple
