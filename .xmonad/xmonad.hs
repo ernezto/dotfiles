@@ -113,7 +113,7 @@ myStartupHook = do
           spawnOnce "picom &"
           -- spawnOnce "nm-applet &"
           spawnOnce "volumeicon &"
-          -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x292d3e --height 22 &"
+          spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x292d3e --height 22 &"
           -- spawnOnce "/usr/bin/emacs --daemon &"
           -- spawnOnce "kak -d -s mysession &"
           -- setWMName "LG3D"
@@ -443,9 +443,11 @@ myManageHook = composeAll
      -- , className =? "vlc"     --> doShift ( myWorkspaces !! 7 )
      , className =? "Gimp"    --> doShift ( myWorkspaces !! 8 )
      , className =? "Gimp"    --> doFloat
+		 , className =? "stalonetray"    --> doIgnore
      , title =? "Oracle VM VirtualBox Manager"     --> doFloat
      , className =? "VirtualBox Manager" --> doShift  ( myWorkspaces !! 4 )
      , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
+     , className =? "firefox" --> doShift ( myWorkspaces !! 2 )  -- Float Firefox Dialog
      ] <+> namedScratchpadManageHook myScratchPads
 
 myLogHook :: X ()
@@ -463,12 +465,15 @@ myKeys =
         , ("C-M1-t", spawn myTerminal)
 
     -- Prompts
-        , ("M-r", shellPrompt dtXPConfig)   -- Shell Prompt
-        , ("C-<Space>",  passPrompt dtXPConfig)    -- Pass Prompt
+        , ("M-r", shellPrompt dtXPConfig)           -- Shell Prompt
+        , ("C-<Space>",  passPrompt dtXPConfig)     -- Pass Prompt
+
+    -- Open file explorer
+        , ("M-e",  spawn "nautilus")                -- Pass Prompt
 
     -- Windows
-        , ("M-w", kill1)                           -- Kill the currently focused client
-        , ("M-S-a", killAll)                         -- Kill all windows on current workspace
+        , ("M-w", kill1)                            -- Kill the currently focused client
+        , ("M-S-a", killAll)                        -- Kill all windows on current workspace
 
     -- Floating windows
         , ("M-f", sendMessage (T.Toggle "floats"))       -- Toggles my 'floats' layout
