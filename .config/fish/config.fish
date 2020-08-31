@@ -1,0 +1,15 @@
+# git aliases
+balias gst   'git status'
+balias gp    'git push'
+balias gcm   'git commit -m'
+balias glo   'git log --oneline'
+balias gl    'git log'
+balias gco   'git checkout'
+balias gsta  'git stash'
+balias gstp  'git stash pop'
+balias gcane 'git commit --amend -no-edit'
+balias grc   'git rebase --continue'
+balias gpr   'git pull --rebase'
+balias gm    'git merge'
+balias ga    'git add'
+
