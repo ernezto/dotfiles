@@ -164,7 +164,7 @@ beautiful.init(string.format(gears.filesystem.get_configuration_dir() .. "/theme
 local myawesomemenu = {
     { "hotkeys", function() return false, hotkeys_popup.show_help end },
     { "manual", terminal .. " -e 'man awesome'" },
-    { "edit config", terminal.." vim /home/dt/.config/awesome/rc.lua" },
+    { "edit config", terminal.." vim /home/emedina/.config/awesome/rc.lua" },
     { "arandr", "arandr" },
     { "restart", awesome.restart },
 }
@@ -266,6 +266,8 @@ globalkeys = my_table.join(
         {description = "Gnome screenshot", group = "screenshots"}),
 
     -- Personal keybindings}}}
+    awful.key({ modkey }, "e", function() awful.util.spawn("nautilus") end,
+        {description = "Nautilus Browsers", group = "browsers"}),
 
 
     -- Hotkeys Awesome
@@ -422,7 +424,7 @@ globalkeys = my_table.join(
               {description = "delete tag", group = "tag"}),
 
     -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.spawn( terminal.." -e fish" ) end,
+    awful.key({ modkey,         }, "Return", function () awful.spawn( terminal.." -e fish" ) end,
               {description = "terminal with fish shell", group = "super"}),
     awful.key({ modkey, "Shift" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
