@@ -706,6 +706,9 @@ awful.rules.rules = {
     { rule = { class = "VirtualBox Machine" },
           properties = { maximized = true } },
 
+    { rule = { class = "jetbrains-idea-ce" },
+          properties = { floating = true } },
+
     { rule = { class = "Xfce4-settings-manager" },
           properties = { floating = false } },
 
