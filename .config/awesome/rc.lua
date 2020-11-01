@@ -709,6 +709,9 @@ awful.rules.rules = {
     { rule = { class = "jetbrains-idea-ce" },
           properties = { floating = true } },
 
+    { rule = { class = "Steam" },
+          properties = { floating = true } },
+
     { rule = { class = "Xfce4-settings-manager" },
           properties = { floating = false } },
 
