@@ -23,6 +23,7 @@ local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
                       require("awful.hotkeys_popup.keys")
 local my_table      = awful.util.table or gears.table -- 4.{0,1} compatibility
+local logout = require("awesome-wm-widgets.logout-widget.logout")
 
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
@@ -269,7 +270,8 @@ globalkeys = my_table.join(
     awful.key({ modkey }, "e", function() awful.util.spawn("nautilus") end,
         {description = "Nautilus Browsers", group = "browsers"}),
 
-
+    awful.key({ altkey, "Control" }, "Delete", function() logout.launch({ bg_color = "#282a36", accent_color = "#ff79c6", icon_size = 40, icon_margin = 16, phrases = {"exit(0)"}}) end,
+        {description = "Show logout screen", group = "custom"}),
     -- Hotkeys Awesome
 
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
