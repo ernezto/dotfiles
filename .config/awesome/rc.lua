@@ -835,6 +835,6 @@ client.connect_signal("property::maximized", border_adjust)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 awful.spawn.with_shell(" feh --bg-scale $HOME/developer/dotfiles/wallpapers/ursa.jpg")
-awful.spawn.with_shell("redshift -l manual")
+awful.spawn.with_shell("redshift-gtk -l manual")
 awful.spawn.with_shell("compton")
 awful.spawn.with_shell("volumeicon")
