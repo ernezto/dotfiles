@@ -1,0 +1,6 @@
+JUnit 5 test template
+
+@org.junit.jupiter.api.Test
+fun `$NAME$`()  {
+  $END$
+}
