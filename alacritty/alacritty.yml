@@ -1,24 +1,28 @@
 gtk_theme_variant: dark
 
 scrolling:
+  history: 50000
   multiplier: 4
 
 font:
   normal:
-    family: Inconsolata
-    style: Regular
+    family: Inconsolata-g for Powerline
+    style: g
 
   Bold:
-    family: Inconsolata
-    style: Bold
+    family: Inconsolata-g for Powerline
+    style: g
 
   italic:
-    family: Inconsolata
-    style: Italic
-  size: 13
+    family: Inconsolata-g for Powerline
+    style: g
+  size: 14
 
   use_thin_strokes: false
 # Colors (Solarized Dark)
+
+draw_bold_text_with_bright_colors: true
+
 colors:
   # Default colors
   primary:
@@ -54,6 +58,22 @@ colors:
 
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
+env:
+  TERM: screen-256color
+
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+
+  padding:
+    x: 10
+    y: 10
+
+  decorations: full
+
+dynamic_padding: false
+
 background_opacity: 1.0
 
 save_to_clipboard: true
