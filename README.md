@@ -17,3 +17,4 @@ Remember to symlink the config files and directories:
 - `ln -s ~/.dotfiles/vim ~/.vim`
 - `ln -s ~/.dotfiles/vim/vimrc ~/.vimrc`
 - and so on...
+ln -s /Users/emedina/developer/dotfiles/alacritty/alacritty.yml /Users/emedina/.alacritty.yml
