@@ -28,10 +28,11 @@ balias ni    'npm install'
 balias nr    'npm run dev'
 balias w     'cd ~/projects'
 # macos
-balias clip  'pbcopy'
+#balias clip  'pbcopy'
 # unix
-#balias clip  'xclip -sel clip'
+balias clip  'xclip -sel clip'
 
 #web aliases
 
-status --is-interactive; and source (jenv init -|psub)
+#status --is-interactive; and source (jenv init -|psub)
+status --is-interactive
