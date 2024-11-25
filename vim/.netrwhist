@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/emedina/developer/linux-setup/roles/dotfiles/vars'
+let g:netrw_dirhist_6='/Users/emedina/developer/linux-setup/roles/dotfiles'
+let g:netrw_dirhist_5='/Users/emedina/developer/linux-setup/roles'
+let g:netrw_dirhist_4='/Users/emedina/developer/linux-setup'
+let g:netrw_dirhist_3='/Users/emedina/developer'
+let g:netrw_dirhist_2='/Users/emedina/developer/dotfiles'
+let g:netrw_dirhist_1='/Users/emedina/developer'

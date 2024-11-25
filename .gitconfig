@@ -1,9 +1,18 @@
 [user]
   name = Ernesto Medina
-  email = ernezto@gmail.com
+  email = ernesto@rillet.com
+  signingkey = /Users/emedina/.ssh/id_git_rillet_rsa.pub
 [color]
   ui = true
 [core]
   editor = vim
 [push]
   default = simple
+	followtags = true
+	autoSetupRemote = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true

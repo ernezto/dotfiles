@@ -81,8 +81,12 @@ set showmode
 
 " Reindent the whole file
 " http://vim.wikia.com/wiki/Fix_indentation
-map <F7> mzgg=G`z<CR>
-
+" map <F7> mzgg=G`z<CR>
+" let g:svelte_preprocessor_tags = [
+"   \ { 'name': 'ts', 'tag': 'script', 'as': 'typescript' }
+"   \ ]
+" let g:svelte_preprocessors = ['ts']
+"
 " Save using Ctrl-s
 " http://vim.wikia.com/wiki/Map_Ctrl-S_to_save_current_or_new_files
 command! -nargs=0 -bar Update if &modified
@@ -176,3 +180,10 @@ command -nargs=0 Quit :qa!
 
 " Ctrl-P -> ;
 nnoremap <silent> ; :CtrlP<cr>
+
+" coc.vim autocompletion setup
+noremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
