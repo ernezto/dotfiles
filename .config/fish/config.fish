@@ -43,4 +43,4 @@ balias be    'cd ~/projects/rillet-backend/'
 status --is-interactive
 #phone mirroing
 balias phone 'scrcpy -K --tcpip=192.168.0.34 --max-size=1024'
-status --is-interactive;
+set -Ux GPG_TTY (tty)
