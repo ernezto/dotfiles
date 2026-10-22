@@ -44,4 +44,3 @@ status --is-interactive
 #phone mirroing
 balias phone 'scrcpy -K --tcpip=192.168.0.34 --max-size=1024'
 status --is-interactive;
-source /opt/homebrew/opt/asdf/libexec/asdf.fish

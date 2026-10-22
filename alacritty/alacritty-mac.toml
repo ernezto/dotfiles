@@ -1,0 +1,87 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#002b36"
+blue = "#839496"
+cyan = "#93a1a1"
+green = "#586e75"
+magenta = "#6c71c4"
+red = "#cb4b16"
+white = "#fdf6e3"
+yellow = "#657b83"
+
+[colors.cursor]
+cursor = "#839496"
+text = "#002b36"
+
+[colors.normal]
+black = "#073642"
+blue = "#268bd2"
+cyan = "#2aa198"
+green = "#859900"
+magenta = "#d33682"
+red = "#dc322f"
+white = "#eee8d5"
+yellow = "#b58900"
+
+[colors.primary]
+background = "#002B36"
+foreground = "#839496"
+
+[env]
+TERM = "screen-256color"
+
+[font]
+size = 16
+
+[font.bold]
+family = "Inconsolata Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Inconsolata Nerd Font"
+style = "Regular"
+
+[font.normal]
+family = "Inconsolata Nerd Font"
+style = "Regular"
+
+[mouse]
+hide_when_typing = false
+
+[scrolling]
+history = 50000
+multiplier = 4
+
+[window]
+decorations = "full"
+dynamic_padding = false
+opacity = 1.0
+decorations_theme_variant = "Dark"
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 10
+y = 10
+
+[selection]
+save_to_clipboard = true
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Alt"
+chars = "\u001bf"
+
+[[keyboard.bindings]]
+key = "B"
+mods = "Alt"
+chars = "\u001bb"
+
+[terminal.shell]
+program = "/opt/homebrew/bin/fish"
+args = ["-l", "-c", "tmux attach || tmux"]
+

@@ -139,3 +139,18 @@
 [submodule "vim/bundle/vim-airline-themes"]
 	path = vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/bundle/coc.nvim"]
+	path = vim/bundle/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "fzf"]
+	path = vim/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "ripgrep"]
+	path = vim/bundle/ripgrep
+	url = https://github.com/BurntSushi/ripgrep.git
+[submodule "silver-searcher"]
+	path = vim/bundle/the_silver_searcher
+	url = https://github.com/ggreer/the_silver_searcher.git
+[submodule "svelte"]
+	path = vim/bundle/vim-svelte
+	url = https://github.com/evanleck/vim-svelte.git
